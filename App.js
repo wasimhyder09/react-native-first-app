@@ -2,6 +2,7 @@ import { useState } from 'react';
 import GoalItem from './components/GoalItem';
 import GoalInput from './components/GoalInput';
 import { StyleSheet, View, FlatList, Button } from 'react-native';
+import { StatusBar } from 'expo-status-bar';
 
 export default function App() {
   const [courseGoals, setCourseGoals] = useState([]);
@@ -48,7 +49,7 @@ const styles = StyleSheet.create({
   appContainer: {
     paddingTop: 50,
     paddingHorizontal: 16,
-    flex: 1
+    flex: 1,
   },
   goalsContainer: {
     flex: 5
